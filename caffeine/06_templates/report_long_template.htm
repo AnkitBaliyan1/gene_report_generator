@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Apply the DMSans font to the entire page or specific elements */
+body {
+font-family: 'DM Sans', sans-serif; 
+}
+margin: 0; /* Removing default margin */
+padding-bottom: 80px; /* Providing some space for the footer */
+			
+}
+
+/* Style for the tick image */
+img.row-icon {
+	width: 50px;
+	height: auto;
+	float: left;
+}
+
+/* Padding for space between rows and for content inside the cells */
+td {
+	padding-top: 12px;  /* Adjust to change the space above the row content */
+	padding-bottom: 12px; /* Adjust to change the space the row content */
+	padding-left: 17px; /* Gap to the left */
+	padding-right: 17px; /* Gap to the right */
+	text-align: justify; /* Justify the text */
+}
+
+.traitclassonly {
+	border-collapse: separate;
+	border-spacing: 0 7px
+}
+
+/* Footer styles */
+.fixed-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f1f1f1; /* Gray background */
+            text-align: center; 
+            padding: 10px; /* Add some padding */
+            font-size: 12px; /* Set font size */
+}
+
+.fixed-footer img {
+	width: 900px;
+	height: 5px;
+	
+}
+
+
+a {
+    text-decoration: none;   /* Removes underline */
+    color: inherit;          /* Makes link color same as surrounding text */
+    background: none;        /* Removes any background */
+    font-weight: normal;     /* Removes bold styling, if any */
+    font-style: normal;      /* Removes italic styling, if any */
+    border: none;            /* Removes any borders */
+    padding: 0;              /* Removes any padding */
+    margin: 0;               /* Removes any margin */
+    cursor: pointer;         /* Ensures the cursor changes to a hand (indicative of a clickable link) */
+}
+
+/* To handle any hover, active, or visited states */
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}		
+
+.dummy_row {
+  background-color: #D5EFC7; /* Set the background color */
+  height: 400px; /* Increase the height to your desired value */
+}
+
+.a4-container {
+    width: 905.92px; /* Width of A4 paper in pixels */
+    height: 1293.04px; /* Height of A4 paper in pixels */
+    margin: auto; /* center the paper on the page */
+    background-color: white; /* Just to make sure the background is white */
+    position: relative; /* Needed for absolute positioning within this div */
+    /* /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  Optional: Add a shadow for a paper-like effect */
+}
+
+</style>
+</head>
+<body>
+<div class="a4-container">
+    <table class="traitclassonly">
+        <!-- This is the placeholder row that will be removed -->
+        <tr id="trait_placeholder">	
+            <td id="image_cell"><img alt="Image Description" src="tick.png"/></td>
+            <td id="content_cell">
+                <table id="inner_table">
+                    <tr>
+                        <td style="line-height: 1.5;  text-align: center; vertical-align: middle;"></td>
+                        <td style="line-height: 1.5; background-color: #FCFFF4;">
+                            <strong >Sample Trait</strong><br/>
+                            <span >Lower Risk</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="line-height: 1.5; background-color: #F5F5F5">
+                            <span id="description" style=" line-height: 1.5;">Sample Description</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td bgcolor="#FCFFF4" style="line-height: 1.5;">
+                            <b>Recommendations:</b><br/>
+                            <!-- Placeholder for recommendations will be added by soup code -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td bgcolor="#F5F5F5" style="line-height: 1.5;">
+                            <b>Genes Analyzed: </b><span>5</span><br/>
+                            <b>Number of Gene Markers Found: </b><span>3</span><br/>
+                            <b>Number of Gene Markers Analyzed: </b><span>7</span><br/>
+                        </td>
+                    </tr>
+					
+
+					
+                </table>
+            </td>
+        </tr>
+		
+	</table>
+<!-- 	<table style="width: 100%;">
+	<tr><td>
+	<tr class="dummy_row"><td><p><p><p><p></td></tr>
+	<tr>
+        <td style="position: relative;"> <!-- Added position relative to this td 
+            <div id="page_number" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 1;">Page [page]</div>
+            <div id="toc" style="position: absolute; color: blue; right: 0; padding-right: 50px; bottom: 1px;"><a href="#tocpage">Table of Contents</a></div>
+        </td>
+	</tr>
+	</table> 
+	<!-- Footer with the image001.gif 
+<footer style="position: fixed;">
+		<hr style="background-color: Pink; height: 3px; border: none;">
+		<div id="toc" style="color: blue; position: absolute; right: 0; bottom: 1;"><a href="#tocpage">Table of Contents</a></div>
+		<div id="page_number" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 1;">Page [page]</div>
+</footer>
+-->
+		
+<div class="footer" style="position: absolute; bottom: 0; width: 100%;">
+    <hr style="background-color: Pink; height: 3px; border: none;">
+    <div id="toc" style="color: blue; position: absolute; right: 0; bottom: 1;"><a href="#tocpage">Table of Contents</a></div>
+    <div id="page_number" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 1;">Page [page]</div>
+</div>
+
+</div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>summary1</title>
+<style>
+    img {
+         visibility: visible; 
+    }
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Apply the DMSans font to the entire page or specific elements */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.white-font {
+  color: #ffffff; /* White color code */
+  font-weight: bold; /* Make the font bolder */
+  font-size: 24.01px; /* Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */
+}
+
+.heading-custom-table-row {
+  background-color: #1C64AF; /* Set the background color */
+  /*  height: 20px; /* Increase the height to your desired value */
+  /* vertical-align: middle; /* Vertically center the text */
+  color: #ffffff; /* White color code */
+  font-weight: bold; /* Make the font bolder */
+  font-size: 20.01px; /* Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */ 
+  border: 3px 
+}
+
+
+ .thin-border {
+    border-left: 1px; /*solid #1C64AF; /* Set the left border to a thin line */
+    border-right: 1px; /*solid #1C64AF; /* Set the right border to a thin line */
+    padding: 5px; /* Add some padding to the cells for better spacing */
+}
+
+.yourresultscolumn-red-table-column {
+  background-color: #FFE4E4; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /* font-size: 21px;  Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+  width: 70px; /* Set the desired width in pixels */
+}
+
+.yourresultscolumn-yellow-table-column {
+  background-color: #F6EFC8; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /*font-size: 21px;  Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+}
+
+.yourresultscolumn-green-table-column {
+  background-color: #D5EFC7; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /* font-size: 21px; Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+  border-bottom: 2px solid #000; 
+}
+
+
+.youroutcomecolumn-left-table-column {
+  
+  height: 50px;  Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 18.01px; /* Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */
+  line-height: 1.5;  
+  border-bottom: 2px solid #000; 
+  text-align: left;
+  padding-left: 30px;
+  width: 270px; /* Set the desired width in pixels */
+  height: 220px; /* Set the desired height in pixels */
+}
+
+.youroutcomecolumn-right-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  width: 240px; /* Set the desired width in pixels */
+  padding-left: 40px;
+  padding-right:30px;
+}
+
+.youroutcomecolumn-right-thickbottom-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  border-bottom: 2px solid #000;
+  width: 240px; 
+  padding-left: 40px; 
+  padding-right:30px;  
+}
+
+.youroutcomecolumn-right-normalbottom-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  border-bottom: 1px solid #000; */
+  width: 240px;
+  padding-left: 40px; 
+  padding-right:30px;
+}
+
+
+.traitsummarytable {
+  border-collapse: collapse; /* Collapse the border spacing */
+  width: 100%; /* Optionally set the width to 100% or your desired width */
+  border: 2px solid #000; /* Thick outside border with your desired color */
+}
+
+/* Style the table cells (td) with thin internal borders */
+traitsummarytable td {
+  border: 1px solid #000; /* Thin internal border with your desired color */
+  padding: 8px; /* Add padding to the table cells for spacing */
+}
+
+h1 {
+  font-size: 40.02px; /* Set your desired font size for H1 */
+  font-family: 'DM Sans', sans-serif; /* Ensure the DMSans font is applied to H1 */
+   padding: 14px;
+}
+
+.icons-svg-64x64 {
+  width: 22px;
+  height: 22px;
+}
+
+ .trait_name {
+ line-height: 2;
+}
+
+
+
+.table-cell-1-width {
+    width: 150px; /* Set the desired width in pixels */
+}
+
+a {
+    text-decoration: none;   /* Removes underline */
+    color: inherit;          /* Makes link color same as surrounding text */
+    background: none;        /* Removes any background */
+    font-weight: normal;     /* Removes bold styling, if any */
+    font-style: normal;      /* Removes italic styling, if any */
+    border: none;            /* Removes any borders */
+    padding: 0;              /* Removes any padding */
+    margin: 0;               /* Removes any margin */
+    cursor: pointer;         /* Ensures the cursor changes to a hand (indicative of a clickable link) */
+}
+
+/* To handle any hover, active, or visited states */
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}		
+
+
+.a4-container {
+    width: 905.92px; /* Width of A4 paper in pixels */
+    height: 1293.04px; /* Height of A4 paper in pixels */
+    margin: auto; /* center the paper on the page */
+    background-color: white; /* Just to make sure the background is white */
+    position: relative; /* Needed for absolute positioning within this div */
+    /* /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  Optional: Add a shadow for a paper-like effect */
+}
+</style>
+
+
+</head>
+<body>
+<div class="a4-container">
+	<center>
+	<h1>YOUR SUMMARY RESULTS</h1>
+	<table border=1  class="traitsummarytable">
+
+	<tr class="heading-custom-table-row" bgcolor="#1C64AF" class="white-font"><td style="text-align: center;">Trait Name</td><td class="thin-border" style="text-align: center;">Your<br> Results</td><td style="text-align: center;">Your Outcomes</td></tr>
+
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"> <strong>Caffeine metabolism </strong></span><br> Genetic differences that influence caffeine clearance from the body <br><a href="#page_7" style="color: blue;">Learn More</a></td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg1_1" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Likely to be a slow metabolizer of caffeine</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img id="pg1_2" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Likely to be a moderate metabolizer of caffeine</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img id="pg1_3" src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Likely to be a fast metabolizer of caffeine</td>
+	</tr>
+
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"> <strong>Caffeine sensitivity & smoking </strong></span><br> Genetic differences in caffeine consumption upon smoking <br><a href="#page_8" style="color: blue;">Learn More</a> </td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg1_4" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">More likely to overconsume caffeine in response to smoking</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img id="pg1_5" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Moderately likely to overconsume caffeine in response to smoking</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img  id="pg1_6" src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Less likely to overconsume caffeine in response to smoking</td>
+	</tr>
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"> <strong>Physical performance & caffeine </strong></span><br> Genetic differences in the impact of caffeine on physical performance <br><a href="#page_9" style="color: blue;">Learn More</a></td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg1_7" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64"  style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Caffeine intake is likely to benefit your endurance potential</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img  id="pg1_8" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64"  style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Caffeine intake equally supports your endurance as well as sprinting potential</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img id="pg1_9"  src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64"  style="visibility: hidden;"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Consuming caffeine before a high-intensity,short-duration activity is likely to benefit your sprinting performance</td>
+	</tr>
+
+
+	</table>
+	
+<div class="footer" style="position: absolute; bottom: 0; width: 100%;">
+    <hr style="background-color: Pink; height: 3px; border: none;">
+    <div id="toc" style="color: blue; position: absolute; right: 0; bottom: 1;"><a href="#tocpage">Table of Contents</a></div>
+    <div id="xxpage_number" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 1;">Page 3</div>
+</div>	
+
+</div>
+
+</body>
+</html>

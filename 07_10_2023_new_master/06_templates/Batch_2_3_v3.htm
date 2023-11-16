@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trait_02</title>
+<style>
+    img {
+        visibility: visible;
+    }
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Apply the DMSans font to the entire page or specific elements */
+body {
+  font-family: 'DM Sans', sans-serif; 
+}
+.heading-custom-table-row {
+  /* background-color: #1C64AF; /* Set the background color */
+  /*  height: 14px; /* Increase the height to your desired value */
+  /* vertical-align: middle; /* Vertically center the text */
+  color: #ffffff; /* White color code */
+  font-weight: bold; /* Make the font bolder */
+  font-size: 18.01px; /* Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */ 
+   
+}
+
+.yourresultscolumn-red-table-column {
+  background-color: #FFE4E4; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /* font-size: 21px;  Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+  width: 70px; /* Set the desired width in pixels */
+}
+
+.yourresultscolumn-yellow-table-column {
+  background-color: #F6EFC8; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /*font-size: 21px;  Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+}
+
+.yourresultscolumn-green-table-column {
+  background-color: #D5EFC7; /* Set the background color */
+  height: 80px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  /* font-size: 21px; Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */  
+  border-bottom: 2px solid #000; 
+}
+
+.youroutcomecolumn-left-table-column {
+  
+  height: 50px;  Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 18.01px; /* Set the font size to 12 pixels */
+  text-align: center; /* Center-align the text horizontally */
+  line-height: 1.5;  
+  border-bottom: 2px solid #000; 
+  text-align: left;
+  padding-left: 30px;
+  width: 270px; /* Set the desired width in pixels */
+  height: 220px; /* Set the desired height in pixels */
+}
+
+.youroutcomecolumn-right-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  width: 240px; /* Set the desired width in pixels */
+  padding-left: 40px;
+  padding-right:30px;
+}
+
+.youroutcomecolumn-right-thickbottom-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  border-bottom: 2px solid #000;
+  width: 240px; 
+  padding-left: 40px; 
+  padding-right:30px;  
+}
+
+.youroutcomecolumn-right-normalbottom-table-column {
+  
+  height: 50px; /* Increase the height to your desired value */
+  vertical-align: middle; /* Vertically center the text */
+  font-size: 17px; /* Set the font size to 12 pixels */
+  text-align: left; /* Center-align the text horizontally */  
+  border-bottom: 1px solid #000; */
+  width: 240px;
+  padding-left: 40px; 
+  padding-right:30px;
+}
+
+
+.traitsummarytable {
+  border-collapse: collapse; /* Collapse the border spacing */
+  width: 100%; /* Optionally set the width to 100% or your desired width */
+  border: 2px solid #000; /* Thick outside border with your desired color */
+}
+
+/* Style the table cells (td) with thin internal borders */
+traitsummarytable td {
+  border: 1px solid #000; /* Thin internal border with your desired color */
+  padding: 8px; /* Add padding to the table cells for spacing */
+}
+
+
+
+.icons-svg-64x64 {
+  width: 22px;
+  height: 22px;
+}
+
+
+ .trait_name {
+ line-height: 2;
+}
+
+
+.table-cell-1-width {
+    width: 150px; /* Set the desired width in pixels */
+}
+
+a {
+    text-decoration: none;   /* Removes underline */
+    color: inherit;          /* Makes link color same as surrounding text */
+    background: none;        /* Removes any background */
+    font-weight: normal;     /* Removes bold styling, if any */
+    font-style: normal;      /* Removes italic styling, if any */
+    border: none;            /* Removes any borders */
+    padding: 0;              /* Removes any padding */
+    margin: 0;               /* Removes any margin */
+    cursor: pointer;         /* Ensures the cursor changes to a hand (indicative of a clickable link) */
+}
+
+/* To handle any hover, active, or visited states */
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}		
+
+
+.a4-container {
+    width: 905.92px; /* Width of A4 paper in pixels */
+    height: 1293.04px; /* Height of A4 paper in pixels */
+    margin: auto; /* center the paper on the page */
+    background-color: white; /* Just to make sure the background is white */
+    position: relative; /* Needed for absolute positioning within this div */
+    /* /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  Optional: Add a shadow for a paper-like effect */
+}
+</style>
+
+
+</head>
+<body><center>
+<div class="a4-container">
+	<table border=1 class="traitsummarytable" >
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"> <strong>Caffeine & blood glucose</strong></span><br> Genetic differences in the effect of caffeine on post-meal blood sugar levels <br><a href="#page_13" style="color: blue;">Learn More</a></td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg3_1" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">More likely to have caffeine-induced blood glucose rise after a meal</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img id="pg3_2" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Moderately likely to have caffeine-induced blood glucose rise after a meal</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img id="pg3_3" src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility: hidden"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Less likely to have caffeine-induced blood glucose rise after a meal</td>
+	</tr>
+
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"> <strong>Caffeine & heart health </strong></span><br> Genetic differences in heart disease risk with caffeine intake <br><a href="#page_14" style="color: blue;">Learn More</a></td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg3_4" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">More likely to have caffeine-induced heart health issues</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img id="pg3_5" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Moderately likely to have caffeine-induced heart health issues</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img id="pg3_6" src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Less likely to have caffeine-induced heart health issues</td>
+	</tr>
+
+	<tr>
+	<td rowspan=3 class="youroutcomecolumn-left-table-column"><span class="trait_name"><strong>Caffeine & appetite </strong></span><br> Genetic differences in appetite- suppression effects of caffeine <br><a href="#page_15" style="color: blue;">Learn More</a></td>
+	<td class="yourresultscolumn-red-table-column"><img id="pg3_7" src="../06_templates/High1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">More likely to have caffeine-induced appetite suppression</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-yellow-table-column"><img id="pg3_8" src="../06_templates/Moderate1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-normalbottom-table-column">Moderately likely to have caffeine-induced appetite suppression</td>
+	</tr>
+	<tr>
+	<td class="yourresultscolumn-green-table-column"><img id="pg3_9" src="../06_templates/Low1.png" alt="Description of the image" class="icons-svg-64x64" style="visibility:hidden"></td>
+	<td class="youroutcomecolumn-right-thickbottom-table-column">Less likely to have caffeine-induced appetite suppression</td>
+	</tr>
+
+
+	</table>
+
+		<div class="footer" style="position: absolute; bottom: 0; width: 100%;">
+			<hr style="background-color: Pink; height: 3px; border: none;">
+			<div id="toc" style="color: blue; position: absolute; right: 0; bottom: 1;"><a href="#tocpage">Table of Contents</a></div>
+			<div id="xxpage_number" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 1;">Page 3</div>
+		</div>	
+</div>
+
+</body>
+</html>
